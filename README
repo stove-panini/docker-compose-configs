@@ -1,0 +1,1 @@
+We must use Compose file format 2.x as our CentOS 7 host is limited to docker-compose version 1.9.0 at this time.

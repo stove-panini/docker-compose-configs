@@ -1,0 +1,18 @@
+---
+version: '2'
+services:
+  sabnzbd:
+    image: sabnzbd/sabnzbd
+    container_name: sabnzbd
+    volumes:
+      - sabnzbd:/datadir
+      - /mnt/data/share/Downloads:/media
+    ports:
+      - 8180:8180
+    environment:
+      - SABNZBD_UID=1000
+      - SABNZBD_GID=1000
+    restart: always
+
+volumes:
+  sabnzbd:
